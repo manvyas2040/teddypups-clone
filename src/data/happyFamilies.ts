@@ -12,7 +12,7 @@ export const HAPPY_FAMILIES: FamilyStory[] = [
       "kind": "image",
       "width": 433,
       "height": 433,
-      "alt": "A happy TeddyPups family with their new puppy",
+      "alt": "A happyTeddyPups family with their new puppy",
       "caption": "Lulu 🧸 with her new mummy ❤️",
       "color": "#d8b898",
       "blurDataUrl": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABQAgCdASoQABAAA4BaJagCdAYvDkjfodzQmgAA/sRUM9ErPdF++UNHno8F4ODXxvzV50QvreqNYMaqodPI/+6fFoRhnf74l572sQnVhhXxmzpytAX9zhrPZzxiw3WhBltt4hVgAAA="

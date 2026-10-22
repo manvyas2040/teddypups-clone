@@ -53,7 +53,7 @@ export default function FAQPage() {
 
           <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
             <a
-              href="https://wa.me/971541676733?text=Hi%20TeddyPups!%20I'd%20love%20to%20ask%20a%20few%20questions%20about%20your%20puppies."
+              href="https://wa.me/919737372040?text=Hi%20TeddyPups!%20I'd%20love%20to%20ask%20a%20few%20questions%20about%20your%20puppies."
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-whatsapp font-bold"
@@ -62,11 +62,11 @@ export default function FAQPage() {
               <span>Ask on WhatsApp</span>
             </a>
             <a
-              href="tel:+971541676733"
+              href="tel:+919737372040"
               className="btn btn-ghost font-bold"
             >
               <Phone className="size-4" />
-              <span>Call +971 54 167 6733</span>
+              <span>Call +91 9737372040</span>
             </a>
           </div>
         </div>

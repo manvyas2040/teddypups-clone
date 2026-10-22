@@ -78,7 +78,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             {/* Bottom Actions */}
             <div className="border-t border-[#2a170e]/10 pt-6">
               <a
-                href="https://wa.me/971541676733?text=Hi%20TeddyPups!%20I'd%20love%20to%20know%20more%20about%20your%20puppies."
+                  href="https://wa.me/919737372040?text=Hi%20TeddyPups!%20I'd%20love%20to%20know%20more%20about%20your%20puppies."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-whatsapp w-full justify-center text-center font-bold"
@@ -89,11 +89,11 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 
               <div className="mt-4 flex items-center justify-between px-2 text-sm text-[#5a3a28]">
                 <a
-                  href="tel:+971541676733"
+                  href="tel:+919737372040"
                   className="flex items-center gap-1.5 font-semibold transition-colors hover:text-[#a24a1a]"
                 >
                   <Phone className="size-4" />
-                  <span>+971 54 167 6733</span>
+                  <span>+91 9737372040</span>
                 </a>
                 <a
                   href="https://www.instagram.com/teddypups.worldwide/"

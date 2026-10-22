@@ -65,7 +65,7 @@ export function Footer() {
                 <FacebookIcon className="size-4" />
               </a>
               <a
-                href="https://wa.me/971541676733?text=Hi%20TeddyPups!%20I'd%20love%20to%20know%20more%20about%20your%20puppies."
+                href="https://wa.me/919737372040?text=Hi%20TeddyPups!%20I'd%20love%20to%20know%20more%20about%20your%20puppies."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex size-10 items-center justify-center rounded-full border border-[#fffdf8]/15 bg-[#fffdf8]/5 text-[#fffdf8] transition-colors hover:bg-[#fffdf8]/15"
@@ -122,19 +122,19 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="size-4 shrink-0 text-[#f2be6b]" />
-                <a href="tel:+971541676733" className="hover:text-[#fffdf8]">
-                  +971 54 167 6733
+                <a href="tel:+919737372040" className="hover:text-[#fffdf8]">
+                  +91 9737372040
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
                 <MessageCircle className="size-4 shrink-0 text-[#f2be6b]" />
                 <a
-                  href="https://wa.me/971541676733"
+                  href="https://wa.me/919737372040"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[#fffdf8]"
                 >
-                  WhatsApp: +971 54 167 6733
+                  WhatsApp: +91 9737372040
                 </a>
               </li>
               <li className="flex items-center gap-2.5">

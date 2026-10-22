@@ -104,7 +104,7 @@ export default function ContactPage() {
               {/* Direct Contact Cards */}
               <div className="mt-6 space-y-3">
                 <a
-                  href="https://wa.me/971541676733?text=Hi%20TeddyPups!%20I'd%20love%20to%20learn%20more%20about%20your%20puppies."
+                  href="https://wa.me/919737372040?text=Hi%20TeddyPups!%20I'd%20love%20to%20learn%20more%20about%20your%20puppies."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-between rounded-2xl border border-[#2a170e]/15 bg-[#fff8ea] p-4 transition-all hover:-translate-y-0.5 hover:shadow-md"
@@ -115,14 +115,14 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="font-bold text-[#2a170e]">WhatsApp Nursery Line</p>
-                      <p className="text-xs text-[#5a3a28]">+971 54 167 6733</p>
+                      <p className="text-xs text-[#5a3a28]">+91 9737372040</p>
                     </div>
                   </div>
                   <span className="text-xs font-bold text-[#1f7a4d]">Chat now →</span>
                 </a>
 
                 <a
-                  href="tel:+971541676733"
+                  href="tel:+919737372040"
                   className="flex items-center justify-between rounded-2xl border border-[#2a170e]/15 bg-[#fff8ea] p-4 transition-all hover:-translate-y-0.5 hover:shadow-md"
                 >
                   <div className="flex items-center gap-3">
@@ -131,7 +131,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="font-bold text-[#2a170e]">Phone</p>
-                      <p className="text-xs text-[#5a3a28]">+971 54 167 6733</p>
+                      <p className="text-xs text-[#5a3a28]">+91 9737372040</p>
                     </div>
                   </div>
                   <span className="text-xs font-bold text-[#a24a1a]">Call us →</span>
@@ -220,7 +220,7 @@ export default function ContactPage() {
                         required
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        placeholder="+971 50 000 0000"
+                        placeholder="+91 9737372040"
                         className="mt-1.5 w-full rounded-xl border border-[#2a170e]/20 bg-[#fffdf8] px-4 py-3 text-sm text-[#2a170e] placeholder-[#2a170e]/40 focus:border-[#a24a1a] focus:outline-none focus:ring-2 focus:ring-[#a24a1a]/20"
                       />
                     </div>

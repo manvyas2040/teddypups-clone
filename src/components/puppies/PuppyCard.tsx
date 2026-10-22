@@ -81,7 +81,7 @@ export function PuppyCard({ puppy, priority = false }: PuppyCardProps) {
           </Link>
 
           <a
-            href={`https://wa.me/971541676733?text=Hi%20TeddyPups!%20I'm%20interested%20in%20${encodeURIComponent(
+            href={`https://wa.me/919737372040?text=Hi%20TeddyPups!%20I'm%20interested%20in%20${encodeURIComponent(
               puppy.displayName
             )}%20(${encodeURIComponent(puppy.breed)}):%20https://puppy.instabizweb.com/puppies/${puppy.slug}`}
             target="_blank"

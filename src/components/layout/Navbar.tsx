@@ -77,7 +77,7 @@ export function Navbar() {
           {/* Right Action / Mobile Trigger */}
           <div className="flex items-center gap-3">
             <a
-              href="https://wa.me/971541676733?text=Hi%20TeddyPups!%20I'd%20love%20to%20know%20more%20about%20your%20puppies."
+              href="https://wa.me/919737372040?text=Hi%20TeddyPups!%20I'd%20love%20to%20know%20more%20about%20your%20puppies."
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-whatsapp hidden !min-h-[2.6rem] !px-4 !py-1.5 text-sm font-bold shadow-sm sm:inline-flex"

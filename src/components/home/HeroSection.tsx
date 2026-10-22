@@ -52,7 +52,7 @@ export function HeroSection() {
             <span aria-hidden="true">🐾</span>
           </Link>
           <a
-            href="https://wa.me/971541676733?text=Hi%20TeddyPups!%20I'd%20love%20to%20know%20more%20about%20your%20puppies."
+            href="https://wa.me/919737372040?text=Hi%20TeddyPups!%20I'd%20love%20to%20know%20more%20about%20your%20puppies."
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-whatsapp text-base"

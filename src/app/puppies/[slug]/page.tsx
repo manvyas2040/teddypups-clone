@@ -172,7 +172,7 @@ export default async function PuppyDetailPage({ params }: PuppyPageProps) {
           {/* Direct Actions */}
           <div className="mt-8 flex flex-col gap-3">
             <a
-              href={`https://wa.me/971541676733?text=${encodeURIComponent(waText)}`}
+              href={`https://wa.me/919737372040?text=${encodeURIComponent(waText)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-whatsapp w-full justify-center text-center font-bold"
