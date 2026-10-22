@@ -1,24 +1,261 @@
 @import "tailwindcss";
 
-@theme {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --color-toffee: #c2622b;
+    --color-toffee-deep: #a24a1a;
+    --color-toffee-ink: #8e3f15;
+    --color-honey: #f2be6b;
+    --color-honey-soft: #fbe3b4;
+    --color-cocoa: #2a170e;
+    --color-cocoa-soft: #5a3a28;
+    --color-milk: #fffdf8;
+    --color-sky: #bfddf5;
+    --color-sky-deep: #2f6e9e;
+    --color-blush: #f9cdbf;
+
+    --font-display: var(--font-fraunces), serif;
+    --font-sans: var(--font-figtree), sans-serif;
+    --font-hand: var(--font-shantell), cursive;
+
+    --gutter: clamp(1rem, 4vw, 3.5rem);
+    --header-h: 4.75rem;
+    --bar-h: 0px;
+
+    --ease-pounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --ease-silk: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  @media (max-width: 768px) {
+    :root {
+      --header-h: 4rem;
+      --bar-h: calc(4rem + env(safe-area-inset-bottom, 0px));
+    }
+  }
+
+  body {
+    background-color: var(--color-milk);
+    color: var(--color-cocoa);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Custom Typography */
+.font-plush {
+  font-family: var(--font-display);
+  font-variation-settings: "SOFT" 100, "WONK" 1, "opsz" 144;
+  letter-spacing: -0.025em;
+  font-weight: 800;
+  line-height: 0.95;
+  text-wrap: balance;
+}
+
+.font-scrawl {
+  font-family: var(--font-hand);
+  font-variation-settings: "INFM" 60, "BNCE" 30;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+/* Gutter Container */
+.gutter {
+  padding-inline: var(--gutter);
+}
+
+/* Day-to-Night Scene Backgrounds */
+.tp-scene {
+  background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-bottom) 100%);
+  position: relative;
+}
+
+/* Button System */
+.btn {
+  min-height: 3.25rem;
+  transition: transform 0.35s var(--ease-pounce), background-color 0.25s ease, box-shadow 0.35s var(--ease-silk);
+  border-radius: 9999px;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.6rem;
+  font-size: 1.0625rem;
+  font-weight: 650;
+  line-height: 1.1;
+  text-decoration: none;
+  display: inline-flex;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-whatsapp {
+  color: #fff;
+  background-color: #1f7a4d;
+  box-shadow: 0 0.5rem 0 -0.15rem var(--color-cocoa);
+}
+
+.btn-whatsapp:hover {
+  background-color: #196640;
+  box-shadow: 0 0.65rem 0 -0.15rem var(--color-cocoa);
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--color-toffee-deep);
+  box-shadow: 0 0.5rem 0 -0.15rem var(--color-cocoa);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-toffee-ink);
+  box-shadow: 0 0.65rem 0 -0.15rem var(--color-cocoa);
+}
+
+.btn-ghost {
+  color: var(--color-cocoa);
+  border: 2px solid var(--color-cocoa);
+  background: transparent;
+  box-shadow: 0 0.4rem 0 -0.15rem rgba(42, 23, 14, 0.15);
+}
+
+.btn-ghost:hover {
+  background-color: rgba(42, 23, 14, 0.04);
+  box-shadow: 0 0.5rem 0 -0.15rem rgba(42, 23, 14, 0.2);
+}
+
+/* Paper Card Motif */
+.tp-paper {
+  border: 3px solid var(--color-cocoa);
+  color: var(--color-cocoa);
+  background: radial-gradient(circle at 0 0, transparent 0 17px, rgba(194, 98, 43, 0.08) 17px 18.5px, transparent 18.5px) 0 0/36px 36px,
+              radial-gradient(circle at 18px 18px, transparent 0 17px, rgba(194, 98, 43, 0.06) 17px 18.5px, transparent 18.5px) 0 0/36px 36px,
+              #fff8ea;
+  border-radius: 1.4rem;
+  padding: clamp(1.4rem, 3vw, 2.25rem);
+  position: relative;
+  box-shadow: 0 8px 24px -4px rgba(42, 23, 14, 0.12);
+}
+
+/* Board / Plate Motif */
+.tp-board {
+  border: 3px solid var(--color-cocoa);
+  background: var(--color-milk);
+  color: var(--color-cocoa);
+  border-radius: 1.6rem;
+  padding: clamp(1.1rem, 2.6vw, 1.75rem);
+  position: relative;
+  box-shadow: 6px 8px 0 0 rgba(42, 23, 14, 0.2);
+}
+
+/* Chapter Pill */
+.tp-chapter {
+  color: var(--color-toffee-ink);
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 1.15rem;
+  display: flex;
+}
+
+.tp-chapter__n {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 9999px;
+  background: var(--color-cocoa);
+  color: var(--color-milk);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+/* Polaroid Card */
+.tp-polaroid {
+  background: #ffffff;
+  border: 1px solid rgba(42, 23, 14, 0.12);
+  box-shadow: 0 10px 25px -5px rgba(42, 23, 14, 0.12), 0 8px 10px -6px rgba(42, 23, 14, 0.08);
+  border-radius: 0.75rem;
+  padding: 0.75rem 0.75rem 1.25rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tp-polaroid:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 20px 30px -10px rgba(42, 23, 14, 0.2);
+}
+
+/* Scalloped Hem for Header */
+.tp-header__hem {
+  opacity: 0;
+  filter: drop-shadow(0 4px 4px rgba(42, 23, 14, 0.08));
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+  display: block;
+  position: absolute;
+  top: calc(100% - 1px);
+  left: 0;
+  width: 100%;
+  height: 14px;
+}
+
+.tp-header[data-scrolled="true"] .tp-header__hem {
+  opacity: 1;
+}
+
+.tp-header[data-scrolled="true"] {
+  background-color: rgba(255, 253, 248, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(42, 23, 14, 0.08);
+}
+
+/* Nav links */
+.tp-nav-link {
+  white-space: nowrap;
+  color: var(--color-cocoa);
+  align-items: center;
+  padding: 0.55rem 0.8rem;
+  font-size: 1rem;
+  font-weight: 650;
+  transition: color 0.25s ease, background-color 0.25s ease;
+  border-radius: 9999px;
+  display: inline-flex;
+  position: relative;
+}
+
+.tp-nav-link:hover {
+  color: var(--color-toffee-deep);
+  background-color: rgba(194, 98, 43, 0.08);
+}
+
+/* Wax / Stamp Badge */
+.tp-gone-stamp {
+  border: 2px dashed #991b1b;
+  color: #991b1b;
+  font-family: var(--font-hand);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  transform: rotate(-8deg);
+  display: inline-block;
+}
+
+/* Link underline effect */
+.link-ink {
+  color: var(--color-toffee-deep);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+
+.link-ink:hover {
+  color: var(--color-toffee-ink);
 }
